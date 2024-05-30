@@ -1,7 +1,7 @@
-Выполнение:
-HQ-SRV:
-apt-get install -y bind bind-utils
-vim /etc/bind/options.conf
+  Выполнение:
+  HQ-SRV:
+  apt-get install -y bind bind-utils
+  vim /etc/bind/options.conf
 
 
 ![image (4)](https://github.com/Ksssenoksss/xenixmuravova/assets/171246409/ca8e44b2-d2c7-4800-aebd-a9eaeb09ae19)
@@ -21,8 +21,10 @@ vim /etc/bind/local.conf
 ![image (7)](https://github.com/Ksssenoksss/xenixmuravova/assets/171246409/4f0abe0a-8c84-40e0-bae0-cb97f71940c2)
 
 
-cp /etc/bind/zone/{localdomain,hq.db}
+  cp /etc/bind/zone/{localdomain,hq.db}
+
 cp /etc/bind/zone/{localdomain,branch.db}
+
 cp /etc/bind/zone/{127.in-addr.arpa,100.db}
 cp /etc/bind/zone/{127.in-addr.arpa,200.db}
 chown root:named /etc/bind/zone/{hq,branch,100,200}.db
